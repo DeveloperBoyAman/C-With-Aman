@@ -1,0 +1,39 @@
+// C Program to Print ALL Armstrong Numbers Under 1000
+
+// Header Files
+#include <stdio.h>
+#include <conio.h>
+#include <math.h>
+
+// Main Function Start
+
+int main()
+{
+
+    int digitsInNumber, copyNumber;
+    float sum;
+    printf("\n>>>>>>>>>>>>>>>> All Armstrong Numbers Under 1000 <<<<<<<<<<<<<<<\n");
+    for (int i = 0; i < 1000; i++)
+    {
+        digitsInNumber = 0;
+        copyNumber = i;
+        while (copyNumber)
+        {
+            digitsInNumber++;
+            copyNumber /= 10;
+        }
+        copyNumber = i;
+        sum = 0;
+        while (copyNumber)
+        {
+            sum += pow(copyNumber % 10, digitsInNumber);
+            copyNumber /= 10;
+        }
+        if (sum == i)
+            printf("%d ", i);
+    }
+
+    getch();
+    return 0;
+}
+// Main Function End
