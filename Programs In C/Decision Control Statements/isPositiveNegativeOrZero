@@ -1,0 +1,25 @@
+// C Program to Check Whether A Given Number is Positive , Negative or Zero
+
+// Header Files
+#include <stdio.h>
+#include <conio.h>
+
+// Main Function Start
+
+int main()
+{
+
+    int num;
+    printf("\nEnter A Number => ");
+    scanf("%d", &num);
+    if (num > 0)
+        printf("Number is Positive");
+    else if (num < 0)
+        printf("Number is Negative");
+    else
+        printf("Number is Zero");
+
+    getch();
+    return 0;
+}
+// Main Function End
