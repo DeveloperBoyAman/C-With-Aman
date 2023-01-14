@@ -1,0 +1,25 @@
+// C Program to Find the Position of First 1 in Binary of A Number
+
+// Header Files
+#include <stdio.h>
+#include <conio.h>
+
+// Main Function Start
+
+int main()
+{
+
+    int num, position = 1;
+    printf("\nEnter A  Number => ");
+    scanf("%d", &num);
+    while (!(num & 1))
+    {
+        position++;
+        num >>= 1;
+    }
+    printf("\nPosition of First 1 => %d", position);
+
+    getch();
+    return 0;
+}
+// Main Function End
