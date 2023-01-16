@@ -33,22 +33,25 @@ int main()
         putch('\n');
     }
 
-    /**************** 2nd Approach *******************/
-    // int rows;
-    // printf("\nHow Many Rows => ");
-    // scanf("%d", &rows);
-    // putch('\n');
-    // for (int i = 1; i <= rows; i++)
-    // {
-    //     for (int j = 1; j <= rows; j++)
-    //     {
-    //         if (j <= rows + 1 - i)
-    //             printf("*");
-    //         else
-    //             printf(" ");
-    //     }
-    //     putch('\n');
-    // }
+  /**************** 2nd Approach *******************/
+  // int rows;
+  // printf("\nHow Many Rows => ");
+  // scanf("%d", &rows);
+  // putch('\n');
+  // for (int i = 1; i <= rows; i++)
+  // {
+  //     for (int j = 1; j <= rows; j++)
+  //     {
+  //         if (j >= i)
+  //             printf("*");
+  //         else
+  //             printf(" ");
+  //     }
+  //     putch('\n');
+  // }
+ 
+ 
+
     getch();
     return 0;
 }
