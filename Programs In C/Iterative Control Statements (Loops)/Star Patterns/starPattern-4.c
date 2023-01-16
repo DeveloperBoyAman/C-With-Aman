@@ -51,7 +51,7 @@ int main()
     // {
     //     for (int j = 1; j <= rows; j++)
     //     {
-    //         if (j >= i)
+    //         if (j <= rows + 1 - i)
     //             printf("*");
     //         else
     //             printf(" ");
