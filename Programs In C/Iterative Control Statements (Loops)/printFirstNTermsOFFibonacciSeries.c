@@ -1,4 +1,4 @@
-// C Program to Print First N Terms of Fibonnaci Series
+// C Program to Print First N Terms of Fibonacci Series
 
 // Header Files
 #include <stdio.h>
@@ -11,7 +11,7 @@ int main()
 {
 
     int nth, prev = -1, next = 1, result = 0;
-    printf("\nEnter N to Print N Terms of Fibonnaci Series => ");
+    printf("\nEnter N to Print N Terms of Fibonacci Series => ");
     scanf("%d", &nth);
 
     // If Start From 0 1 1 2 3 .......
