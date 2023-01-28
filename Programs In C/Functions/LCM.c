@@ -24,6 +24,8 @@ int main()
 // Function Definition
 int LCM(int num1, int num2)
 {
+    
+    // 1st Approach
     int max = num1 > num2 ? num1 : num2;
 
     for (int i = max; i <= num1 * num2; i += max)
@@ -31,4 +33,17 @@ int LCM(int num1, int num2)
         if (i % num1 == 0 && i % num2 == 0)
             return i;
     }
+    
+    // 2nd Approach (Using HCF)
+    // int divisor = num1 < num2 ? num1 : num2;
+    // int dividend = num1 > num2 ? num1 : num2;
+    // int remainder = dividend % divisor;
+    // while (remainder)
+    // {
+    //     dividend = divisor;
+    //     divisor = remainder;
+    //     remainder = dividend % divisor;
+    // }
+    // return num1*num2/divisor;
+    
 }
