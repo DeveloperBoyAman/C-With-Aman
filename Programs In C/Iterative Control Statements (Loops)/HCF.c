@@ -10,49 +10,46 @@
 int main()
 {
 
-    // 1st Way
-    int num1, num2, i, small, large;
+    int num1, num2;
     printf("\nEnter Two Numbers to Find HCF => ");
     scanf("%d%d", &num1, &num2);
-    small = num1 < num2 ? num1 : num2;
-    large = num1 > num2 ? num1 : num2;
-    if (large % small == 0)
-        i = small;
+
+    // 1st Approach
+    int min = num1 < num2 ? num1 : num2;
+    int max = num1 > num2 ? num1 : num2;
+    int i;
+    if (max % min == 0)
+        return min;
     else
     {
-        i = small / 2;
-        while (i)
+        for (i = min / 2; i; i--)
         {
             if (num1 % i == 0 && num2 % i == 0)
-                break;
-            i--;
+                return i;
         }
     }
-    printf("HCF of %d and %d => %d", num1, num2, i);
+    printf("\nHCF of %d and %d => %d", num1, num2, i);
 
-    // 2nd Way
-    //  int num1, num2, i, divisor, dividend, remainder;
-    //  printf("\nEnter Two Numbers to Find HCF => ");
-    //  scanf("%d%d", &num1, &num2);
-    //  divisor = num1 < num2 ? num1 : num2;
-    //  dividend = num1 > num2 ? num1 : num2;
-    //  remainder = dividend % divisor;
-    //  while (remainder)
-    //  {
-    //      dividend = divisor;
-    //      divisor = remainder;
-    //      remainder = dividend % divisor;
-    //  }
+    // 2nd Approach
+    // int divisor = num1 < num2 ? num1 : num2;
+    // int dividend = num1 > num2 ? num1 : num2;
+    // int remainder = dividend % divisor;
+    // while (remainder)
+    // {
+    //     dividend = divisor;
+    //     divisor = remainder;
+    //     remainder = dividend % divisor;
+    // }
     //  printf("HCF of %d and %d => %d", num1, num2, divisor);
 
-    // 3rd Way
-    // int num1, num2, i;
-    // printf("\nEnter Two Numbers to Find HCF => ");
-    // scanf("%d%d", &num1, &num2);
+    // 3rd Approach
     // int max = num1 > num2 ? num1 : num2;
+    // int i;
     // for (i = max; i <= num1 * num2; i += max)
+    // {
     //     if (i % num1 == 0 && i % num2 == 0)
     //         break;
+    // }
     // printf("HCF of %d and %d => %d", num1, num2, num1 * num2 / i);
 
     getch();
