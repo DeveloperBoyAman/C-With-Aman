@@ -10,22 +10,22 @@
 int main()
 {
 
-    // 1st Way
-    int num1, num2, i, small, large;
-    printf("\nEnter Two Numbers => ");
+    int num1, num2, i;
+    printf("\nEnter Two Numbers to Check Co-Prime or Not => ");
     scanf("%d%d", &num1, &num2);
-    small = num1 < num2 ? num1 : num2;
-    large = num1 > num2 ? num1 : num2;
-    if (large % small == 0)
-        i = small;
+
+    // 1st Approach
+    int min = num1 < num2 ? num1 : num2;
+    int max = num1 > num2 ? num1 : num2;
+    int i;
+    if (max % min == 0)
+        return min;
     else
     {
-        i = small / 2;
-        while (i)
+        for (i = min / 2; i; i--)
         {
             if (num1 % i == 0 && num2 % i == 0)
-                break;
-            i--;
+                return i;
         }
     }
     if (i == 1)
@@ -34,7 +34,7 @@ int main()
         printf("%d and %d Are Not Co-Prime Numbers", num1, num2);
 
     // 2nd Way
-    // int num1, num2, i, divisor, dividend, remainder;
+    // int num1, num2, divisor, dividend, remainder;
     // printf("\nEnter Two Numbers to Find HCF => ");
     // scanf("%d%d", &num1, &num2);
     // divisor = num1 < num2 ? num1 : num2;
@@ -51,19 +51,22 @@ int main()
     // else
     //     printf("%d and %d Are Not Co-Prime Numbers", num1, num2);
 
+    
     // 3rd Way
     // int num1, num2, i;
     // printf("\nEnter Two Numbers to Find HCF => ");
     // scanf("%d%d", &num1, &num2);
     // int max = num1 > num2 ? num1 : num2;
-    // for (i = max; i <= num1 * num2; i += max)
+    // for (i = max; i <= num1 * num2; i += max){
     //     if (i % num1 == 0 && i % num2 == 0)
     //         break;
+    // }
     // if (num1 * num2 / i == 1)
     //     printf("%d and %d Are Co-Prime Numbers", num1, num2);
     // else
     //     printf("%d and %d Are Not Co-Prime Numbers", num1, num2);
 
+    
     getch();
     return 0;
 }
