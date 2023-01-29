@@ -16,9 +16,10 @@ int main()
     if (discriminant > 0)
         printf("Roots Are Real and Distnict");
     else if (discriminant)
-        printf("Roots Are Real and Equal");
-    else
         printf("Roots Are Imaginary");
+    else
+        printf("Roots Are Real and Equal");
+    
 
     getch();
     return 0;
