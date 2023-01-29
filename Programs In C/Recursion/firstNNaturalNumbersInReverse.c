@@ -13,7 +13,7 @@ int main()
 {
 
     int n;
-    printf("\nHow Many First Natural Numbers You Wan to Print In Reverse Order => ");
+    printf("\nHow Many First Natural Numbers You Want to Print In Reverse Order => ");
     scanf("%d", &n);
     printf("\n>>>>>>>>>>>> First %d Natural Numbers In Reverse Order Are <<<<<<<<<<<<<\n", n);
     firstNNaturalNumbersInReverse(n);
