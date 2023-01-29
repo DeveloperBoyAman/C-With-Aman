@@ -13,7 +13,7 @@ int main()
 {
 
     int n;
-    printf("\nHow Many First Natural Numbers You Wan to Print => ");
+    printf("\nHow Many First Natural Numbers You Want to Print => ");
     scanf("%d", &n);
     printf("\n>>>>>>>>>>>>>> First %d Natural Numbers Are <<<<<<<<<<<<<<\n", n);
     firstNNaturalNumbers(n);
