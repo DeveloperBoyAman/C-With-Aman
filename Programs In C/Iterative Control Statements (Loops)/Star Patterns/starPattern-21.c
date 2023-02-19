@@ -2,7 +2,7 @@
 
 /*
 
-    Pattern 6.
+    Pattern 21.
 
     1
     2 3
