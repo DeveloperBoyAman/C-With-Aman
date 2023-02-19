@@ -1,62 +1,57 @@
-// C Program to Print Star Pattern
+// Star Pattern
 
 /*
 
-*****
-****
-***
-**
-*
+    Pattern 9.
+
+        *****
+         ****
+          ***
+           **
+            *
 
 */
 
 // Header Files
 #include <stdio.h>
 #include <conio.h>
+#include <stdlib.h>
 
 // Main Function Start
 int main()
 {
 
-    /**************** 1st Approach *******************/
-    int rows;
+    // // 1st Approach
+    int rows, cols;
+
     printf("\nHow Many Rows => ");
     scanf("%d", &rows);
-    putch('\n');
-    for (int i = 1; i <= rows; i++)
+    cols = rows;
+    puts("\n--------------------------------------------\n");
+    for (int row = 1; row <= rows; row++)
     {
-        for (int j = 1; j <= rows + 1 - i; j++)
-            printf("*");
-        putch('\n');
+        for (int col = 1; col <= cols; col++)
+        {
+            if (col >= row)
+                printf("*");
+            else
+                printf(" ");
+        }
+        printf("\n");
     }
 
-    /**************** 2nd Approach *******************/
+    // // 2nd Approach
     // int rows;
     // printf("\nHow Many Rows => ");
     // scanf("%d", &rows);
-    // putch('\n');
-    // for (int i = rows; i >= 1; i--)
+    // puts("\n--------------------------------------------\n");
+    // for (int row = 1; row <= rows; row++)
     // {
-    //     for (int j = i; j >= 1; j--)
-    //         printf("*");
-    //     putch('\n');
-    // }
-
-    /**************** 3rd Approach *******************/
-    // int rows;
-    // printf("\nHow Many Rows => ");
-    // scanf("%d", &rows);
-    // putch('\n');
-    // for (int i = 1; i <= rows; i++)
-    // {
-    //     for (int j = 1; j <= rows; j++)
-    //     {
-    //         if (j <= rows + 1 - i)
-    //             printf("*");
-    //         else
-    //             printf(" ");
-    //     }
-    //     putch('\n');
+    //   for (int space = 1; space <= row - 1; space++)
+    //     printf(" ");
+    //   for (int col = row; col <= rows; col++)
+    //     printf("*");
+    //   printf("\n");
     // }
 
     getch();
