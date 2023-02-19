@@ -1,56 +1,57 @@
-
-// C Program to Print Star Pattern
+// Star Pattern
 
 /*
 
-*****
- ****
-  ***
-   **
+    Pattern 3.
+
+    * * * *
+    * * *
+    * *
     *
+
+
 
 */
 
 // Header Files
 #include <stdio.h>
 #include <conio.h>
+#include <stdlib.h>
 
 // Main Function Start
 int main()
 {
 
-    /**************** 1st Approach *******************/
+    // // 1st Approach
+    // int rows;
+    // printf("\nHow Many Rows => ");
+    // scanf("%d", &rows);
+    // puts("\n--------------------------------------------\n");
+    // for (int row = 1; row <= rows; row++)
+    // {
+    //     for (int col = 1; col <= rows; col++)
+    //     {
+    //         if (col <= rows + 1 - row)
+    //             printf("*");
+    //         else
+    //             printf(" ");
+    //     }
+    //     putch(10);
+    // }
+
+    // // 2nd Approach
     int rows;
     printf("\nHow Many Rows => ");
     scanf("%d", &rows);
-    putch('\n');
-    for (int i = 1; i <= rows; i++)
+    puts("\n--------------------------------------------\n");
+    for (int row = 1; row <= rows; row++)
     {
-        for (int space = 1; space <= i - 1; space++)
-            printf(" ");
-        for (int j = i; j <= rows; j++)
-            printf("*");
-        putch('\n');
-    }
 
-  /**************** 2nd Approach *******************/
-  // int rows;
-  // printf("\nHow Many Rows => ");
-  // scanf("%d", &rows);
-  // putch('\n');
-  // for (int i = 1; i <= rows; i++)
-  // {
-  //     for (int j = 1; j <= rows; j++)
-  //     {
-  //         if (j >= i)
-  //             printf("*");
-  //         else
-  //             printf(" ");
-  //     }
-  //     putch('\n');
-  // }
- 
- 
+        for (int col = 1; col <= rows + 1 - row; col++)
+            printf("*");
+
+        putch(10);
+    }
 
     getch();
     return 0;
