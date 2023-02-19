@@ -1,55 +1,64 @@
-// C Program to Print Star Pattern
+// Star Pattern
 
 /*
 
-**********
-****  ****
-***    ***
-**      **
-*        *
+    Pattern 7.
+
+    **********
+    ****  ****
+    ***    ***
+    **      **
+    *        *
+
 
 */
 
 // Header Files
 #include <stdio.h>
 #include <conio.h>
+#include <stdlib.h>
 
 // Main Function Start
 int main()
 {
 
-    /**************** 1st Approach *******************/
-    int rows;
-    printf("\nHow Many Rows => ");
-    scanf("%d", &rows);
-    putch('\n');
-    for (int i = 1; i <= rows; i++)
-    {
-        for (int j = 1; j <= rows + 1 - i; j++)
-            printf("*");
-        for (int space = 1; space <= i * 2 - 2; space++)
-            printf(" ");
-        for (int j = 1; j <= rows + 1 - i; j++)
-            printf("*");
-        putch('\n');
-    }
-
-    /**************** 2nd Approach *******************/
-    // int rows;
+    // // 1st Approach
+    // int rows, cols;
     // printf("\nHow Many Rows => ");
     // scanf("%d", &rows);
-    // putch('\n');
-    // for (int i = 1; i <= rows; i++)
+    // cols = rows * 2;
+    // puts("\n--------------------------------------------\n");
+    // for (int row = 1; row <= rows; row++)
     // {
-    //     for (int j = 1; j <= rows * 2; j++)
+    //     for (int col = 1; col <= cols; col++)
     //     {
-    //         if (j <= rows + 1 - i || j >= rows + i)
+    //         if (col <= rows + 1 - row || col >= rows + row)
     //             printf("*");
     //         else
     //             printf(" ");
     //     }
-    //     putch('\n');
+    //     putch(10);
     // }
+
+    // // 2nd Approach
+    int rows;
+    printf("\nHow Many Rows => ");
+    scanf("%d", &rows);
+    puts("\n--------------------------------------------\n");
+    for (int row = 1; row <= rows; row++)
+    {
+
+        for (int col = 1; col <= rows + 1 - row; col++)
+            printf("*");
+
+        for (int space = 1; space <= (row - 1) * 2; space++)
+            printf(" ");
+
+        for (int col = 1; col <= rows + 1 - row; col++)
+            printf("*");
+
+        putch(10);
+    }
 
     getch();
     return 0;
