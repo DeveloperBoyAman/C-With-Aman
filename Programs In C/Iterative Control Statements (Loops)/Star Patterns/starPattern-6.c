@@ -1,53 +1,62 @@
-// C Program to Print Star Pattern
+// Star Pattern
 
 /*
 
-*********
- *******
-  *****
-   ***
-    *
+    Pattern 6.
+
+    *********
+     *******
+      *****
+       ***
+        *
 
 */
 
 // Header Files
 #include <stdio.h>
 #include <conio.h>
+#include <stdlib.h>
 
 // Main Function Start
 int main()
 {
 
-    /**************** 1st Approach *******************/
-    int rows;
-    printf("\nHow Many Rows => ");
-    scanf("%d", &rows);
-    putch('\n');
-    for (int i = 1; i <= rows; i++)
-    {
-        for (int space = 1; space <= i - 1; space++)
-            printf(" ");
-        for (int j = 1; j <= rows * 2 - (i * 2 - 1); j++)
-            printf("*");
-        putch('\n');
-    }
-
-    /**************** 2nd Approach *******************/
-    // int rows;
+    // // 1st Approach
+    // int rows, cols;
     // printf("\nHow Many Rows => ");
     // scanf("%d", &rows);
-    // putch('\n');
-    // for (int i = 1; i <= rows; i++)
+    // cols = rows * 2 - 1;
+    // puts("\n--------------------------------------------\n");
+    // for (int row = 1; row <= rows; row++)
     // {
-    //     for (int j = 1; j <= rows * 2 - 1; j++)
+    //     for (int col = 1; col <= cols; col++)
     //     {
-    //         if (j >= i && j <= rows * 2 - i)
+    //         if (col >= row && col <= cols + 1 - row)
     //             printf("*");
     //         else
     //             printf(" ");
     //     }
-    //     putch('\n');
+    //     putch(10);
     // }
+
+    // // 2nd Approach
+    int rows;
+    printf("\nHow Many Rows => ");
+    scanf("%d", &rows);
+    puts("\n--------------------------------------------\n");
+    for (int row = 1; row <= rows; row++)
+    {
+        for (int space = 1; space <= row - 1; space++)
+            printf(" ");
+
+        // for (int col = 1; col <= rows * 2 - 1 - (row - 1) * 2; col++)
+        //     printf("*");
+
+        for (int col = row; col <= rows * 2 - row; col++)
+            printf("*");
+
+        putch(10);
+    }
 
     getch();
     return 0;
