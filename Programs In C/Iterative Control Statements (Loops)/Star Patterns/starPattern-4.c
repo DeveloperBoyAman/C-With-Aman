@@ -2,7 +2,7 @@
 
 /*
 
-    Pattern 9.
+    Pattern 4.
 
         *****
          ****
