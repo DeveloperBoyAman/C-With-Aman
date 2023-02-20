@@ -1,57 +1,63 @@
-// C Program to Print Star Pattern
+// Star Pattern
 
 /*
 
+    Pattern 16.
 
-    *    
-   * *   
-  *   *  
- *     * 
-*********
-
+            *
+           * *
+          *   *
+         *     *
+        *********
 
 */
 
 // Header Files
 #include <stdio.h>
 #include <conio.h>
+#include <stdlib.h>
 
 // Main Function Start
 int main()
 {
 
-    /**************** 1st Approach *******************/
-    int rows;
+    // // 1st Approach
+    int rows, cols;
     printf("\nHow Many Rows => ");
     scanf("%d", &rows);
-    putch('\n');
-    for (int i = 1; i <= rows; i++)
+    cols = rows * 2 - 1;
+    puts("\n--------------------------------------------\n");
+    for (int row = 1; row <= rows; row++)
     {
-        for (int space = 1; space <= rows - i; space++)
-            printf(" ");
-        for (int j = 1; j <= i * 2 - 1; j++)
-            if (j == 1 || j == i * 2 - 1 || i == rows)
+        for (int col = 1; col <= cols; col++)
+        {
+            if (col == rows + 1 - row || col == rows - 1 + row || row == rows)
                 printf("*");
             else
                 printf(" ");
-        putch('\n');
+        }
+        putch(10);
     }
 
-    /**************** 2nd Approach *******************/
+    // // 2nd Approach
     // int rows;
     // printf("\nHow Many Rows => ");
     // scanf("%d", &rows);
-    // putch('\n');
-    // for (int i = 1; i <= rows; i++)
+    // puts("\n--------------------------------------------\n");
+    // for (int row = 1; row <= rows; row++)
     // {
-    //     for (int j = 1; j <= rows * 2 - 1; j++)
+    //     for (int space = 1; space <= rows - row; space++)
+    //         printf(" ");
+
+    //     for (int col = 1; col <= row * 2 - 1; col++)
     //     {
-    //         if (j == rows + 1 - i || j == rows - 1 + i || i == rows)
+    //         if (col == 1 || col == row * 2 - 1 || row == rows)
     //             printf("*");
     //         else
     //             printf(" ");
     //     }
-    //     putch('\n');
+
+    //     putch(10);
     // }
 
     getch();
