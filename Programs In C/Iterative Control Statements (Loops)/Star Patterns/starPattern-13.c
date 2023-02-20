@@ -1,61 +1,71 @@
-// C Program to Print Star Pattern
+// Star Pattern
 
 /*
 
+    Pattern 13.
 
-ABCDEDCBA
-ABCD DCBA
-ABC   CBA
-AB     BA
-A       A
+    A B C D E F G F E D C B A
+    A B C D E F   F E D C B A
+    A B C D E       E D C B A
+    A B C D           D C B A
+    A B C               C B A
+    A B                   B A
+    A                       A
+
+
 
 */
 
 // Header Files
 #include <stdio.h>
 #include <conio.h>
+#include <stdlib.h>
 
 // Main Function Start
 int main()
 {
 
-    /**************** 1st Approach *******************/
+    // // 1st Approach
+    // int rows, cols;
+    // printf("\nHow Many Rows => ");
+    // scanf("%d", &rows);
+    // cols = rows * 2 - 1;
+    // puts("\n--------------------------------------------\n");
+    // char ch = 'A';
+
+    // for (int row = 1; row <= rows; row++)
+    // {
+    //     for (int col = 1; col <= cols; col++)
+    //     {
+    //         if (col <= rows + 1 - row || col >= rows - 1 + row)
+    //             printf("%c", ch);
+    //         else
+    //             putch(' ');
+    //         col < rows ? ch++ : ch--;
+    //     }
+    //     ch = 'A';
+    //     printf("\n");
+    // }
+
+    // // 2nd Approach
     int rows;
     printf("\nHow Many Rows => ");
     scanf("%d", &rows);
-    putch('\n');
-    for (int i = 1; i <= rows; i++)
+    puts("\n--------------------------------------------\n");
+    for (int row = 1; row <= rows; row++)
     {
-        for (int j = 1; j <= rows + 1 - i; j++)
-            printf("%c", 'A' - 1 + j);
 
-        for (int space = 1; space <= (i - 1) * 2 - 1; space++)
+        for (int col = 1; col <= rows + 1 - row; col++)
+            printf("%c", 'A' - 1 + col);
+
+        for (int space = 1; space <= (row - 1) * 2 - 1; space++)
             printf(" ");
 
-        for (int k = i == 1 ? rows - i : rows + 1 - i; k >= 1; k--)
-            printf("%c", 'A' - 1 + k);
+        for (int col = row == 1 ? rows - row : rows + 1 - row; col >= 1; col--)
+            printf("%c", 'A' - 1 + col);
 
-        putch('\n');
+        putch(10);
     }
-
-    /**************** 2nd Approach *******************/
-    // int rows, k;
-    // printf("\nHow Many Rows => ");
-    // scanf("%d", &rows);
-    // putch('\n');
-    // for (int i = 1; i <= rows; i++)
-    // {
-    //     k = 'A';
-    //     for (int j = 1; j <= rows * 2 - 1; j++)
-    //     {
-    //         if (j <= rows + 1 - i || j >= rows - 1 + i)
-    //             printf("%c", k);
-    //         else
-    //             printf(" ");
-    //         j < rows ? k++ : k--;
-    //     }
-    //     putch('\n');
-    // }
 
     getch();
     return 0;
