@@ -4,11 +4,24 @@
 
     Pattern 19.
 
-    1 2 3
-    4 5 6
-    7 8 9
+  *****     *****
+ *******   *******
+********* *********
+******-AMAN-*******
+ *****************
+  ***************
+   *************
+    ***********
+     *********
+      *******
+       *****
+        ***
+         *
 
-  */
+
+
+
+*/
 
 // Header Files
 #include <stdio.h>
@@ -19,32 +32,38 @@
 int main()
 {
 
-    // // 1st Approach
-    int rows, cols;
-    printf("\nHow Many Rows => ");
-    scanf("%d", &rows);
-    cols = rows;
-    puts("\n--------------------------------------------\n");
-    int count = 1;
-    for (int row = 1; row <= rows; row++)
+    int i, j, rows = 13, cols = 19;
+    for (i = 1; i <= rows; i++)
     {
-        for (int col = 1; col <= cols; col++)
-            printf("%3d  ", count++);
+        for (j = 1; j <= cols; j++)
+        {
+            if (i <= 3)
+                if ((j >= 4 - i && j <= 6 + i) || (j >= 14 - i && j <= 16 + i))
+                    printf("*");
+                else
+                    printf(" ");
+            else if (i == 4)
+                if (j == 7)
+                    printf("-");
+                else if (j == 8)
+                    printf("A");
+                else if (j == 9)
+                    printf("M");
+                else if (j == 10)
+                    printf("A");
+                else if (j == 11)
+                    printf("N");
+                else if (j == 12)
+                    printf("-");
+                else
+                    printf("*");
+            else if (j >= i - 3 && j <= 23 - i)
+                printf("*");
+            else
+                printf(" ");
+        }
         printf("\n");
     }
-
-    // // 2nd Approach
-    //  int rows, cols;
-    //  printf("\nHow Many Rows => ");
-    //  scanf("%d", &rows);
-    //  cols = rows;
-    //  puts("\n--------------------------------------------\n");
-    //  for (int row = 1; row <= rows; row++)
-    //  {
-    //      for (int col = 1; col <= cols; col++)
-    //           printf("%3d  ", rows * (row - 1) + col);
-    //   printf("\n");
-    // }
 
     getch();
     return 0;
