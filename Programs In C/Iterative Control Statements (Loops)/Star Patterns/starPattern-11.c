@@ -24,13 +24,14 @@ int main()
 
     // // 1st Approach
     // int rows, cols;
+    // char ch;
     // printf("\nHow Many Rows => ");
     // scanf("%d", &rows);
     // cols = rows * 2 - 1;
     // puts("\n--------------------------------------------\n");
-    // char ch = 'A';
     // for (int row = 1; row <= rows; row++)
     // {
+    //     ch = 'A';
     //     for (int col = 1; col <= cols; col++)
     //     {
     //         if (col >= rows + 1 - row && col <= rows - 1 + row)
