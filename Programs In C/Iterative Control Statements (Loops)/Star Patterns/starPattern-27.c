@@ -21,17 +21,18 @@ int main()
 {
 
     // // 1st Approach
-    int rows, cols;
+    int rows, cols,count;
     printf("\nHow Many Rows => ");
     scanf("%d", &rows);
     cols = rows;
     puts("\n--------------------------------------------\n");
     for (int row = 1; row <= rows; row++)
     {
+        count=row;
         for (int col = 1; col <= cols; col++)
         {
             if (col >= row)
-                printf("%d", col);
+                printf("%d",count++);
             else
                 printf(" ");
         }
