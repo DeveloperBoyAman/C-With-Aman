@@ -21,11 +21,10 @@ int main()
 {
 
     // // 1st Approach
-    int rows;
+    int rows,count=1;
     printf("\nHow Many Rows => ");
     scanf("%d", &rows);
     puts("\n--------------------------------------------\n");
-    int count = 1;
     for (int row = 1; row <= rows; row++)
     {
         for (int col = 1; col <= row; col++)
@@ -34,10 +33,9 @@ int main()
     }
 
     // // 2nd Approach
-    // int rows;
+    // int rows,count=1;
     // printf("\nHow Many Rows => ");
     // scanf("%d", &rows);
-    // int count = 1;
     // puts("\n--------------------------------------------\n");
     // for (int row = 1; row <= rows; row++)
     // {
