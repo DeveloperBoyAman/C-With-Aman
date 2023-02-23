@@ -5,10 +5,10 @@
      Pattern 2.
 
             *
-          * *
-        * * *
-      * * * *
-    * * * * *
+           **
+          *** 
+         ****
+        *****
 
   */
 
@@ -46,7 +46,7 @@ int main()
     puts("\n--------------------------------------------\n");
     for (int row = 1; row <= rows; row++)
     {
-        for (int space = 1; space <= rows - row + 1; space++)
+        for (int space = 1; space <= rows - row; space++)
             printf(" ");
         for (int col = 1; col <= row; col++)
             printf("*");
