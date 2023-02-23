@@ -51,13 +51,13 @@ int main()
         for (int space = 1; space <= row - 1; space++)
             printf(" ");
 
-        // for (int col = 1; col <= rows * 2 - 1 - (row - 1) * 2; col++)
-        // {
-        //     if (col == 1 || col == rows * 2 - 1 - (row - 1) * 2 || row == 1)
-        //         printf("*");
-        //     else
-        //         printf(" ");
-        // }
+           //  // for (int col = 1; col <= rows * 2 - 1 - (row - 1) * 2; col++)
+           //  // {
+           //  //     if (col == 1 || col == rows * 2 - 1 - (row - 1) * 2 || row == 1)
+           //  //         printf("*"); 
+           //  //     else
+           //  //         printf(" ");
+           //  // }
 
         for (int col = row; col <= rows * 2 - row; col++)
         {
