@@ -28,7 +28,6 @@ int main()
     // scanf("%d", &rows);
     // cols = rows * 2 - 1;
     // puts("\n--------------------------------------------\n");
-    // char ch = 'A';
     // for (int row = 1; row <= rows; row++)
     // {
     //     ch = 'A';
