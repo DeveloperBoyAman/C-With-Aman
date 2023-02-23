@@ -33,7 +33,7 @@ int main()
     // {
     //     for (int col = 1; col <= cols; col++)
     //     {
-    //         if (col >= row && col <= cols + 1 - row)
+    //         if (col == row && col == cols + 1 - row || row == 1)
     //             printf("*");
     //         else
     //             printf(" ");
