@@ -4,13 +4,13 @@
 
     Pattern 13.
 
-    A B C D E F G F E D C B A
-    A B C D E F   F E D C B A
-    A B C D E       E D C B A
-    A B C D           D C B A
-    A B C               C B A
-    A B                   B A
-    A                       A
+    ABCDEFGFEDCBA
+    ABCDEF FEDCBA
+    ABCDE   EDCBA
+    ABCD     DCBA
+    ABC       CBA
+    AB         BA
+    A           A
 
 
 
@@ -27,14 +27,15 @@ int main()
 
     // // 1st Approach
     // int rows, cols;
+    // char ch ;
     // printf("\nHow Many Rows => ");
     // scanf("%d", &rows);
     // cols = rows * 2 - 1;
     // puts("\n--------------------------------------------\n");
-    // char ch = 'A';
 
     // for (int row = 1; row <= rows; row++)
     // {
+    //     ch = 'A';
     //     for (int col = 1; col <= cols; col++)
     //     {
     //         if (col <= rows + 1 - row || col >= rows - 1 + row)
@@ -43,7 +44,6 @@ int main()
     //             putch(' ');
     //         col < rows ? ch++ : ch--;
     //     }
-    //     ch = 'A';
     //     printf("\n");
     // }
 
