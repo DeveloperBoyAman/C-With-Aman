@@ -4,10 +4,10 @@
 
     Pattern  10.
 
-    1 2 3 4 3 2 1
-    1 2 3   3 2 1
-    1 2       2 1
-    1           1
+    1234321
+    123 321
+    12   21
+    1     1
 
 
 
@@ -23,14 +23,14 @@ int main()
 {
 
     // // 1st Approach
-    // int rows, cols;
+    // int rows, cols,count;
     // printf("\nHow Many Rows => ");
     // scanf("%d", &rows);
     // cols = rows * 2 - 1;
     // puts("\n--------------------------------------------\n");
-    // int count = 1;
     // for (int row = 1; row <= rows; row++)
     // {
+    //     count=1;
     //     for (int col = 1; col <= cols; col++)
     //     {
     //         if (col <= rows + 1 - row || col >= rows - 1 + row)
@@ -39,7 +39,6 @@ int main()
     //             printf(" ");
     //         col < rows ? count++ : count--;
     //     }
-    //     count = 1;
     //     printf("\n");
     // }
 
