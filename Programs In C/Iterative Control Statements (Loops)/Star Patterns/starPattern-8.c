@@ -21,12 +21,11 @@ int main()
 {
 
     // // 1st Approach
-    // int rows, cols;
+    // int rows, cols,count;
     // printf("\nHow Many Rows => ");
     // scanf("%d", &rows);
     // cols = rows * 2 - 1;
     // puts("\n--------------------------------------------\n");
-    // int count = 1;
     // for (int row = 1; row <= rows; row++)
     // {
     //     count = 1;
