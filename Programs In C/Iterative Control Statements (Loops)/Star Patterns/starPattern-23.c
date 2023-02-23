@@ -21,10 +21,10 @@ int main()
 {
 
     int rows;
+    char ch = 'A';
     printf("\nHow Many Rows => ");
     scanf("%d", &rows);
     puts("\n--------------------------------------------\n");
-    char ch = 'A';
     for (int row = 1; row <= rows; row++)
     {
         for (int col = 1; col <= rows; col++)
