@@ -5,10 +5,10 @@
      Pattern 1.
 
      *
-     * *
-     * * *
-     * * * *
-     * * * * *
+     **
+     ***
+     ****
+     *****
 
   */
 
@@ -40,10 +40,9 @@ int main()
     }
 
     // // 2nd Approach
-    // int rows, cols;
+    // int rows;
     // printf("\nHow Many Rows => ");
     // scanf("%d", &rows);
-    // cols = rows;
     // puts("\n--------------------------------------------\n");
     // for (int row = 1; row <= rows; row++)
     // {
