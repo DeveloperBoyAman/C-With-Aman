@@ -73,6 +73,44 @@ int main()
     //     putch(10);
     // }
 
+    // // 4th Approach
+    // int rows;
+    // printf("\nHow Many Rows => ");
+    // scanf("%d", &rows);
+    // puts("\n--------------------------------------------\n");
+    // for (int row = 1; row <= rows; row++)
+    // {
+    //     for (int space = 1; space <= row - 1; space++)
+    //         printf(" ");
+
+    //     for (int col = row; col <= rows; col++)
+    //         printf("*");
+
+    //     for (int col = rows + 1; col <= rows * 2 - row; col++)
+    //         printf("*");
+
+    //     putch(10);
+    // }
+
+    // // 5th Approach
+    // int rows;
+    // printf("\nHow Many Rows => ");
+    // scanf("%d", &rows);
+    // puts("\n--------------------------------------------\n");
+    // for (int row = 1; row <= rows; row++)
+    // {
+    //     for (int space = 1; space <= row - 1; space++)
+    //         printf(" ");
+
+    //     for (int col = 1; col <= rows + 1 - row; col++)
+    //         printf("*");
+
+    //     for (int col = 1; col <= rows - row; col++)
+    //         printf("*");
+
+    //     putch(10);
+    // }
+
     getch();
     return 0;
 }
