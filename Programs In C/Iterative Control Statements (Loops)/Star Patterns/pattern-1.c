@@ -1,21 +1,20 @@
-// Star Pattern
+// C Program to Print Following Pattern
 
 /*
 
      Pattern 1.
 
      *
-     **
-     ***
-     ****
-     *****
+     * *
+     * * *
+     * * * *
+     * * * * *
 
-  */
+*/
 
 // Header Files
 #include <stdio.h>
 #include <conio.h>
-#include <stdlib.h>
 
 // Main Function Start
 int main()
@@ -32,9 +31,9 @@ int main()
         for (int col = 1; col <= cols; col++)
         {
             if (col <= row)
-                printf("*");
+                printf("* ");
             else
-                printf(" ");
+                printf("  ");
         }
         printf("\n");
     }
@@ -47,7 +46,7 @@ int main()
     // for (int row = 1; row <= rows; row++)
     // {
     //     for (int col = 1; col <= row; col++)
-    //         printf("*");
+    //         printf("* ");
     //     printf("\n");
     // }
 
