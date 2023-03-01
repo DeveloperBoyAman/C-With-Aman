@@ -1,4 +1,4 @@
-// Star Pattern
+// C Program to Print Following Pattern
 
 /*
 
@@ -15,7 +15,6 @@
 // Header Files
 #include <stdio.h>
 #include <conio.h>
-#include <stdlib.h>
 
 // Main Function Start
 int main()
@@ -48,8 +47,47 @@ int main()
     // {
     //     for (int space = 1; space <= rows - row; space++)
     //         printf(" ");
+
     //     for (int col = 1; col <= row * 2 - 1; col++)
     //         printf("*");
+
+    //     putch(10);
+    // }
+
+    // // 3rd Approach
+    // int rows, starsInEachRow = 1;
+    // printf("\nHow Many Rows => ");
+    // scanf("%d", &rows);
+    // puts("\n--------------------------------------------\n");
+    // for (int row = 1; row <= rows; row++)
+    // {
+    //     for (int space = 1; space <= rows - row; space++)
+    //         printf(" ");
+
+    //     for (int col = 1; col <= starsInEachRow; col++)
+    //         printf("*");
+
+    //     starsInEachRow += 2;
+
+    //     putch(10);
+    // }
+
+    // // 4th Approach
+    // int rows;
+    // printf("\nHow Many Rows => ");
+    // scanf("%d", &rows);
+    // puts("\n--------------------------------------------\n");
+    // for (int row = 1; row <= rows; row++)
+    // {
+    //     for (int space = 1; space <= rows - row; space++)
+    //         printf(" ");
+
+    //     for (int col = 1; col <= row; col++)
+    //         printf("*");
+
+    //     for (int col = 1; col <= row - 1; col++)
+    //         printf("*");
+
     //     putch(10);
     // }
 
