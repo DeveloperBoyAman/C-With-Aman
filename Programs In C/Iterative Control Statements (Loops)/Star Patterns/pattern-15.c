@@ -51,9 +51,9 @@ int main()
     //     for (int col = 1; col <= row; col++)
     //     {
     //         if (col == row || col == 1 || row == rows)
-    //             printf("*");
+    //             printf("* ");
     //         else
-    //             printf(" ");
+    //             printf("  ");
     //     }
     //     printf("\n");
     // }
