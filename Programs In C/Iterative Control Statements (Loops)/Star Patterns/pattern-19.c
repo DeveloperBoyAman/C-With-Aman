@@ -30,6 +30,7 @@ int main()
 {
 
     int rows = 13, cols = 19;
+    printf("\n\n");
     for (int row = 1; row <= rows; row++)
     {
         for (int col = 1; col <= cols; col++)
