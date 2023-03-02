@@ -32,9 +32,9 @@ int main()
         for (int col = 1; col <= cols; col++)
         {
             if (col == cols || col == rows + 1 - row || row == rows)
-                printf("*");
+                printf("* ");
             else
-                printf(" ");
+                printf("  ");
         }
         printf("\n");
     }
