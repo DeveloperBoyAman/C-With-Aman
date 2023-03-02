@@ -10,12 +10,11 @@
      *     *
      * * * * *
 
-  */
+*/
 
 // Header Files
 #include <stdio.h>
 #include <conio.h>
-#include <stdlib.h>
 
 // Main Function Start
 int main()
@@ -32,9 +31,9 @@ int main()
     //     for (int col = 1; col <= cols; col++)
     //     {
     //         if (col == 1 || col == row || row == rows)
-    //             printf("*");
+    //             printf("* ");
     //         else
-    //             printf(" ");
+    //             printf("  ");
     //     }
     //     printf("\n");
     // }
@@ -50,9 +49,9 @@ int main()
         for (int col = 1; col <= row; col++)
         {
             if (col == 1 || col == row || row == rows)
-                printf("*");
+                printf("* ");
             else
-                printf(" ");
+                printf("  ");
         }
         printf("\n");
     }
