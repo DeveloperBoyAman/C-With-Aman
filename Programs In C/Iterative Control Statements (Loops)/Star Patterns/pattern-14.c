@@ -1,4 +1,5 @@
-// Star Pattern
+// C Program to Print Following Pattern
+
 
 /*
 
