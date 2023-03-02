@@ -1,4 +1,4 @@
-// Star Pattern
+// C Program to Print Following Pattern
 
 /*
 
@@ -14,34 +14,33 @@
 // Header Files
 #include <stdio.h>
 #include <conio.h>
-#include <stdlib.h>
 
 // Main Function Start
 int main()
 {
 
     // // 1st Approach
-    int rows,count=1;
+    int rows, num = 1;
     printf("\nHow Many Rows => ");
     scanf("%d", &rows);
     puts("\n--------------------------------------------\n");
     for (int row = 1; row <= rows; row++)
     {
         for (int col = 1; col <= row; col++)
-            printf("%2d ", count++);
+            printf("%2d ", num++);
         printf("\n");
     }
 
     // // 2nd Approach
-    // int rows,count=1;
+    // int rows, num = 1;
     // printf("\nHow Many Rows => ");
     // scanf("%d", &rows);
     // puts("\n--------------------------------------------\n");
     // for (int row = 1; row <= rows; row++)
     // {
-    //     count += row - 1;
+    //     num += row - 1;
     //     for (int col = 1; col <= row; col++)
-    //         printf("%2d ", count + col - 1);
+    //         printf("%-2d ", num + col - 1);
     //     printf("\n");
     // }
 
