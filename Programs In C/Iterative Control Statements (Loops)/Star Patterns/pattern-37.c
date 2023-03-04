@@ -14,7 +14,7 @@
 
       1st Formula =>  row! / ( col! * (row-col)! )  ----> row =  0 1 2 ...... N and col = 0 1 2 ..... N
 
-      2nd Formula => n =  n * (row - col) / (col + 1)   ----> n Starts with 0 for Each Row , And Print n to get Element .  row =  0 1 2 ...... N and col = 0 1 2 ..... N
+      2nd Formula => n =  n * (row - col) / (col + 1)   ----> n Starts with 1 for Each Row , And Print n to get Element .  row =  0 1 2 ...... N and col = 0 1 2 ..... N
 
 
 */
